@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Bucket">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:text="Оплата и доставка заказа"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Введите имя пользователя"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Введите ваш контактный email"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Введите ваш номер телефона"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="71dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="399dp"
+                    android:layout_height="68dp"
+                    android:gravity="center"
+                    android:text="Доставка"
+                    android:textColor="#000000"
+                    android:textSize="24sp"
+                    tools:ignore="MissingConstraints" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="37dp">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="211dp"
+                android:layout_height="match_parent"
+                android:text="Как забрать заказ:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/switch4"
+                android:layout_width="148dp"
+                android:layout_height="37dp"
+                android:text="Доставка"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:insetLeft="25dp"
+                android:insetRight="25dp"
+                android:onClick="onClick"
+                android:text="На карте" />
+
+            <Switch
+                android:id="@+id/switch5"
+                android:layout_width="148dp"
+                android:layout_height="37dp"
+                android:text="Самовывоз"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        </TableRow>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="68dp">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Оплата"
+                        android:textColor="#000000"
+                        android:textSize="24sp"
+                        tools:layout_editor_absoluteX="148dp"
+                        tools:layout_editor_absoluteY="18dp"
+                        tools:ignore="MissingConstraints" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Как забрать заказ:"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <Switch
+                android:id="@+id/switch6"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:gravity="end"
+                android:paddingStart="16dp"
+                android:text="Наличные"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/switch7"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:gravity="end"
+                android:paddingRight="71dp"
+                android:text="Карта"
+                android:textSize="16sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:paddingRight="16dp"
+            android:text="Итого к оплате 9900 руб."
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:gravity="center"
+            android:insetLeft="70dp"
+            android:insetRight="70dp"
+            android:text="Оплатить" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
