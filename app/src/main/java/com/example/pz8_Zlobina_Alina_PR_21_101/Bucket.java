@@ -15,6 +15,7 @@ public class Bucket extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bucket);
         Button btn1 = findViewById(R.id.button7);
+
     }
 
     @Override
